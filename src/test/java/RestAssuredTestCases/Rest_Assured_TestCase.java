@@ -27,12 +27,6 @@ public class Rest_Assured_TestCase {
 		System.out.println("Response in Pretty Format => "+resp.prettyPrint());
 				
 		
-		
-		
-		
-		
-		
-		
 	}
 
 }

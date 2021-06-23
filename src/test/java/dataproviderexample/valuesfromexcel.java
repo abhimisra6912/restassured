@@ -10,9 +10,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class valuesfromexcel {
 
 	public static Object[][] gettestdata() throws IOException {
-		// public static void main(String str[]) throws IOException{
+		//public static void main(String str[]) throws IOException{
 
-		String path = "D:\\TestSample.xlsx";
+		String path = "C:\\Users\\AbhishekMishra\\workspace\\restassured\\TestData.xlsx";
 
 		FileInputStream fis = new FileInputStream(path);
 
@@ -23,6 +23,7 @@ public class valuesfromexcel {
 		int totalrows = sheet.getLastRowNum();
 		Row row = sheet.getRow(1);
 		int totalcolumn = row.getLastCellNum();
+		totalrows = totalrows+1;
 
 		System.out.println("Total Rows:" + totalrows);
 

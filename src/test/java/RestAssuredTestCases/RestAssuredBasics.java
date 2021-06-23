@@ -2,6 +2,7 @@ package RestAssuredTestCases;
 
 import static io.restassured.RestAssured.given;
 
+
 import java.io.FileInputStream;
 
 import org.apache.commons.io.IOUtils;
@@ -19,7 +20,8 @@ import dataproviderexample.valuesfromexcel;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import pojopackage.pojoclass;
+import pojopackage.Root;
+//import pojopackage.root;
 
 import java.io.IOException;
 //import org.apache.commons.io.IOUtils;
@@ -178,13 +180,13 @@ public class RestAssuredBasics {
 
 	}
 
-	@Test(enabled = false)
+	/*@Test(enabled = false)
 	public void pojoexample() throws JsonProcessingException {
 
 		RestAssured.baseURI = "http://localhost:3000/";
 
-		pojoclass pojoobject = new pojoclass();
-
+	    root pojoobject = new root();
+		
 		pojoobject.setStream("science");
 		pojoobject.setFirstname("amit");
 		pojoobject.setLastname("luthra");
@@ -202,7 +204,7 @@ public class RestAssuredBasics {
 
 		given().contentType(ContentType.JSON).body(reqbody).when().post("students").then().statusCode(201).log().all();
 
-	}
+	}*/
 
 	@Test(enabled = false)
 	public void queryparameterexample() {
@@ -249,7 +251,7 @@ public class RestAssuredBasics {
 
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void soapexample() throws IOException {
 		RestAssured.baseURI = "http://www.dneonline.com";
 
